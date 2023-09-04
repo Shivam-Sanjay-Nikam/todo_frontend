@@ -15,7 +15,7 @@ const TodoDetails = ({ todo }) => {
     if (!user) {
       return;
     }
-    const response = await fetch('/api/todolist/' + todo._id, {
+    const response = await fetch('https://back-task-k9mb.onrender.com/api/todolist/' + todo._id, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${user.token}`,
