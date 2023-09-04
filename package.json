@@ -1,5 +1,5 @@
 {
-  "proxy" : "https://back-task-k9mb.onrender.com",
+  "proxy" : "https://tracker-task.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
