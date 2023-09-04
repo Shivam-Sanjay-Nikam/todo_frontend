@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await fetch("https://back-task-k9mb.onrender.com/api/todolist/", {
+        const response = await fetch("/api/todolist/", {
           headers: { 'Authorization': `Bearer ${user.token}` },
         });
         if (!response.ok) {
