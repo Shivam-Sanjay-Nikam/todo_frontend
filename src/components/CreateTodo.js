@@ -30,7 +30,7 @@ const CreateTodo = () => {
 
     const todo = { title, description, priority, status, duedate }; // Include duedate
 
-    const response = await fetch('/api/todolist/', {
+    const response = await fetch('https://back-task-k9mb.onrender.com/api/todolist/', {
       method: 'POST',
       body: JSON.stringify(todo),
       headers: {
