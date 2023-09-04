@@ -23,7 +23,7 @@ const TodoUpdateForm = ({ todo, onUpdate, onClose }) => {
       setError(null);
 
       // Perform the update operation
-      const response = await fetch(`/api/todolist/${todo._id}`, {
+      const response = await fetch(`https://back-task-k9mb.onrender.com/api/todolist/${todo._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
